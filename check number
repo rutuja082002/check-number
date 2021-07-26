@@ -1,0 +1,31 @@
+#include <iostream>
+
+using namespace std;
+int fun(int num)
+{
+    int i;
+    int n=1;
+    for(i=2;i<=num/2;i++)
+    {
+        if(num%i==0)
+        n=0;
+        break;
+    }
+}
+int main()
+{
+    int num,i;
+    cout<<"entr a number :\n";
+    cin>>num;
+    for(i=2;i<=num/2;i++)
+    {if(fun(i)){
+        if(fun(num-i)){
+            cout<<num<<"="<<i<<"+"<<num-1<<endl;
+        }
+    }
+        
+}
+     
+
+    return 0;
+}
